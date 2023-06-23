@@ -1,3 +1,80 @@
+## [1.10.12](https://github.com/dhis2/data-quality-app/compare/v1.10.11...v1.10.12) (2023-06-22)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([f78e6ab](https://github.com/dhis2/data-quality-app/commit/f78e6ab8292aa0c83cd4049651c1da2bc4a39ae8))
+
+## [1.10.11](https://github.com/dhis2/data-quality-app/compare/v1.10.10...v1.10.11) (2023-06-21)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([90fd17e](https://github.com/dhis2/data-quality-app/commit/90fd17e04cd56e48100a2db7a24fa6bed6494937))
+
+## [1.10.10](https://github.com/dhis2/data-quality-app/compare/v1.10.9...v1.10.10) (2023-06-20)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([bf0a5cc](https://github.com/dhis2/data-quality-app/commit/bf0a5cc2d21d1d6e4d6a4367d0d7a927fa2639be))
+
+## [1.10.9](https://github.com/dhis2/data-quality-app/compare/v1.10.8...v1.10.9) (2023-06-19)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([80c3e46](https://github.com/dhis2/data-quality-app/commit/80c3e46d55f6905587f2ebee878e4ddf25f486f7))
+
+## [1.10.8](https://github.com/dhis2/data-quality-app/compare/v1.10.7...v1.10.8) (2023-06-18)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([e7fac69](https://github.com/dhis2/data-quality-app/commit/e7fac695979c62d02760623c47c6ca48854bcbd7))
+
+## [1.10.7](https://github.com/dhis2/data-quality-app/compare/v1.10.6...v1.10.7) (2023-05-27)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([9c9784c](https://github.com/dhis2/data-quality-app/commit/9c9784ceec9c30e3f2b2c7b90be7d7a435776a02))
+
+## [1.10.6](https://github.com/dhis2/data-quality-app/compare/v1.10.5...v1.10.6) (2023-05-26)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([d086a17](https://github.com/dhis2/data-quality-app/commit/d086a17093de2945bf0b853fb5c57e43571a68a1))
+
+## [1.10.5](https://github.com/dhis2/data-quality-app/compare/v1.10.4...v1.10.5) (2023-05-25)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([1f7b1c8](https://github.com/dhis2/data-quality-app/commit/1f7b1c89de07d57d8e9dc477789e8f2bb6f9d169))
+
+## [1.10.4](https://github.com/dhis2/data-quality-app/compare/v1.10.3...v1.10.4) (2023-05-23)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([a7da27a](https://github.com/dhis2/data-quality-app/commit/a7da27a15271016d6c7e12acecb69b01e3377284))
+
+## [1.10.3](https://github.com/dhis2/data-quality-app/compare/v1.10.2...v1.10.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* disable button if start date is after end date ([#1014](https://github.com/dhis2/data-quality-app/issues/1014)) ([790a155](https://github.com/dhis2/data-quality-app/commit/790a155f35e27d52e2aaad10b907d8b2fdd18be5))
+
+## [1.10.2](https://github.com/dhis2/data-quality-app/compare/v1.10.1...v1.10.2) (2023-03-09)
+
+
+### Bug Fixes
+
+* **DHIS2-14900:** bump dhis/ui version to fix ethiopic calendar bug ([#1011](https://github.com/dhis2/data-quality-app/issues/1011)) ([b833bc7](https://github.com/dhis2/data-quality-app/commit/b833bc7a8336311729ef66f688c38b3c215415e5))
+
 ## [1.10.1](https://github.com/dhis2/data-quality-app/compare/v1.10.0...v1.10.1) (2023-03-02)
 
 
