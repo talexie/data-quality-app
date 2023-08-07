@@ -5,7 +5,7 @@ import styles from './DownloadAs.module.css'
 import useHrefs from './use-hrefs.js'
 
 const DownloadAs = ({ endpoint, fileTypes, queryStr, skipExtension }) => {
-    const hrefs = useHrefs({ endpoint, fileTypes, queryStr })
+    const hrefs = useHrefs({ endpoint, fileTypes, queryStr,skipExtension })
 
     return (
         <div className={styles.downloadAs}>
@@ -20,15 +20,9 @@ const DownloadAs = ({ endpoint, fileTypes, queryStr, skipExtension }) => {
                 </a>
             )}
             {fileTypes.includes('csv') && (
-                skipExtension?(
-                    <a href={hrefs} download>
-                        {i18n.t('Download as CSV')}
-                    </a>
-                ):(
-                    <a href={hrefs.csv} download>
-                        {i18n.t('Download as CSV')}
-                    </a>
-                )
+                <a href={hrefs.csv} download>
+                    {i18n.t('Download as CSV')}
+                </a>
             )}
         </div>
     )
