@@ -2,6 +2,7 @@ export const apiConf = {
     endpoints: {
         validationRulesReport: 'dataAnalysis/validationRules/report',
         reportAnalysis: 'dataAnalysis/report',
+        outlierDetection: 'outlierDetection',
     },
     results: {
         analysis: {
