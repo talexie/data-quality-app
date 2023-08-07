@@ -30,7 +30,7 @@ const OutlierAnalyisTable = ({
     const downloadLink = (
         <DownloadAs
             fileTypes={['csv']}
-            endpoint={'/outlierDetection'}
+            endpoint={'outlierDetection'}
             queryStr={csvQueryStr}
         />
     )
