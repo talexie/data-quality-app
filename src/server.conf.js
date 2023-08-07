@@ -5,7 +5,7 @@ export const apiConf = {
     },
     results: {
         analysis: {
-            limit: 500,
+            limit: 5000,
         },
     },
 }
