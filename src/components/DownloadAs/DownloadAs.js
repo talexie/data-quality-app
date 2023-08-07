@@ -20,7 +20,7 @@ const DownloadAs = ({ endpoint, fileTypes, queryStr, skipExtension }) => {
                 </a>
             )}
             {fileTypes.includes('csv') && (
-                <a href={hrefs.csv} download>
+                <a href={hrefs.csv} download="validation_data.csv">
                     {i18n.t('Download as CSV')}
                 </a>
             )}
