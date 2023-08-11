@@ -19,6 +19,7 @@ import {
 } from '../constants.js'
 import ElementRow from './ElementRow.js'
 import styles from './OutlierAnalysisTable.module.css'
+import { downloadXlsxFile } from '../../../helpers/file.js'
 
 const OutlierAnalyisTable = ({
     csvQueryStr,
@@ -29,12 +30,15 @@ const OutlierAnalyisTable = ({
     const isZScoreAlgorithm = Z_SCORE_ALGORITHMS.has(algorithm)
 
     const downloadLink = (
-        <DownloadAs
-            fileTypes={['csv']}
-            skipExtension = {true}
-            endpoint={apiConf.endpoints.outlierDetection}
-            queryStr={csvQueryStr}
-        />
+        <>
+            <DownloadAs
+                fileTypes={['csv']}
+                skipExtension = {true}
+                endpoint={apiConf.endpoints.outlierDetection}
+                queryStr={csvQueryStr}
+            />
+            <Button  onClick = { (_e)=>downloadXlsxFile(elements)}>Download XLS</Button>
+        </>
     )
 
     return (
