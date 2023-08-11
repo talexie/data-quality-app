@@ -6,7 +6,7 @@ import {
     TableHeader,
     TableHeaderColumn,
     TableRow,
-    Button
+    FlatButton
 } from 'material-ui'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -38,7 +38,7 @@ const OutlierAnalyisTable = ({
                 endpoint={apiConf.endpoints.outlierDetection}
                 queryStr={csvQueryStr}
             />
-            <Button variant="contained" color="primary" onClick = { (_e)=>downloadXlsxFile(elements)}>Download XLS</Button>
+            <FlatButton primary={ true } label={'Download Xls'} onClick = { (_e)=>downloadXlsxFile(elements)}/>
         </>
     )
 

@@ -14,5 +14,4 @@ export const downloadXlsxFile =(rows) =>{
 
     /* create an XLSX file and try to save to Presidents.xlsx */
     writeFile(workbook, "validationData.xlsx");
-    return;
 }
