@@ -10,8 +10,6 @@ import {
 } from 'material-ui'
 import PropTypes from 'prop-types'
 import React from 'react'
-import DownloadAs from '../../../components/DownloadAs/DownloadAs.js'
-import { apiConf } from '../../../server.conf.js'
 import cssPageStyles from '../../Page.module.css'
 import {
     Z_SCORE_ALGORITHMS,
@@ -31,15 +29,7 @@ const OutlierAnalyisTable = ({
     const isZScoreAlgorithm = Z_SCORE_ALGORITHMS.has(algorithm)
 
     const downloadLink = (
-        <>
-            <DownloadAs
-                fileTypes={['csv']}
-                skipExtension = {true}
-                endpoint={apiConf.endpoints.outlierDetection}
-                queryStr={csvQueryStr}
-            />
-            <FlatButton primary={ true } label={'Download Xls'} onClick = { (_e)=>downloadXlsxFile(elements)}/>
-        </>
+        <FlatButton primary={ true } label={'Download Xls'} onClick = { (_e)=>downloadXlsxFile(elements)}/>
     )
 
     return (
