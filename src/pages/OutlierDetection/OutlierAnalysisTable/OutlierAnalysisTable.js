@@ -6,6 +6,7 @@ import {
     TableHeader,
     TableHeaderColumn,
     TableRow,
+    FlatButton
 } from 'material-ui'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -18,6 +19,7 @@ import {
 } from '../constants.js'
 import ElementRow from './ElementRow.js'
 import styles from './OutlierAnalysisTable.module.css'
+import { downloadXlsxFile } from '../../../helpers/file.js'
 
 const OutlierAnalyisTable = ({
     csvQueryStr,
@@ -28,11 +30,14 @@ const OutlierAnalyisTable = ({
     const isZScoreAlgorithm = Z_SCORE_ALGORITHMS.has(algorithm)
 
     const downloadLink = (
-        <DownloadAs
-            fileTypes={['csv']}
-            endpoint={'/outlierDetection'}
-            queryStr={csvQueryStr}
-        />
+        <>
+            <DownloadAs
+                fileTypes={['csv']}
+                endpoint={'/outlierDetection'}
+                queryStr={csvQueryStr}
+            />
+            <FlatButton primary={ true } label={'Download Xls'} onClick = { (_e)=>downloadXlsxFile(elements)}/>
+        </>
     )
 
     return (
